@@ -1,0 +1,240 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    /* align-items: center;
+    justify-content: center;  */
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+   
+}
+.nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    
+}
+
+ .nav-list li{
+    font-size: 20px;
+   list-style: none;
+    padding: 10px 20px;
+ }
+
+ .nav-list li a{
+    text-decoration: none;
+    color: white;  
+ }
+ .nav-list li a:hover{
+     color: rgb(219, 163, 163);
+ }
+
+.rightnav{
+    width: 70%;
+}
+.logo img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height: 100vh;
+    
+}
+.mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 100%;
+    margin: auto;
+    height: 80%;
+   
+}
+.rightnav{
+    padding: 30px;
+    text-align: right;
+    width: 50%;  
+}
+.signin{
+    font-size: 18px;
+    padding: 7px;
+    /* border-radius: 15px; */
+    border: 2px #747474;
+    color: white;
+    background-color: #383838;
+    margin: 5px;
+    cursor: pointer;
+    /* font-weight: bold; */
+
+}
+.signin:hover{
+    color: rgb(0, 0, 0);
+}
+/* .login{
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px #747474;
+    color: white;
+    background-color: #898989;
+
+} */
+
+.left{
+    margin: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.right img{
+    /* transform: rotate(-8deg); */
+    box-shadow: 10px 10px 5px grey inset;
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    /* border:3px solid rgb(255, 255, 255); */
+    display: block;
+    /* margin: 30px; */
+    
+}
+.bigtext{
+    -webkit-text-stroke: 1px rgb(71, 71, 71);
+    
+    text-shadow:
+    3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: cadetblue;
+    font: small-caps bold 24px/1 sans-serif;
+    font-size: 60px;
+    /* font-weight: bold; */
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+.smalltext{
+    color: #d6d6d6;
+    font-size: 25px;
+    margin: 10px;
+}
+.secright{
+     /* display: flex; */
+    /*height: 900px;
+     align-items: center;
+    justify-content: space-evenly; 
+    margin: auto;
+    max-width: 100% */
+    background-color: rgb(177, 200, 219);
+}
+.a,.b{
+    display: flex;
+}
+.placment,.dsa{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.placmentimg img,.dsaimg img{
+    margin: 70px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    display: block;
+}
+.stext{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    color: #000000;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+
+
+.contactus{
+    height: 600px;
+}
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+}
+.form{
+    /* align-items: center; */
+    margin: 25px auto;
+    max-width: 600px;
+}
+.form-input{
+ 
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+    border: 2px solid rgb(48, 48, 48);
+}
+.btn{
+    padding: 6px 10px;
+    /* vertical-align: middle; */
+    font-size: 15px;
+    font-weight: 700;
+    border-radius:4px;
+} 
+.last{
+    font-size: 15px;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+.burger{
+    display: none;
+position: absolute;
+cursor: pointer;
+right: 5%;
+top: 15px;
+}
+.line{
+ width: 30px;
+ background-color: white;
+ height: 4px;
+ margin:5px 3px;
+}
+
+@media only screen and (max-width:900px){
+    .nav-list{
+        flex-direction:column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height:70px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+
+

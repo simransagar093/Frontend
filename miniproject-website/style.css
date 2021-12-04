@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+}
+
+
+ .nav-list li a{
+    text-decoration: none;
+    color: grey;
+ }
+
+ .logo{
+     width: 20px;
+ }
+
+
