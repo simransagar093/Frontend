@@ -15,13 +15,18 @@ burger.addEventListener('click' , () => {
 
 
 
+// this piece of code is for contact us
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
 
 
-// for domain page
-
-document.getElementById("deme").onclick = function() {myFunction()};
-
-function myFunction() {
-  document.getElementById("deme").innerHTML = "YOU CLICKED ME!";
-}
-
+//   for logiconst
+$(document).ready(function(){
+    $("form").submit(function(){
+      alert("Great Job !");
+    });
+  });
